@@ -8,6 +8,79 @@ var stirlings = new google.maps.LatLng(35.20528,-85.91656);
 var sut = new google.maps.LatLng(35.20402, -85.92155);
 var gamma = new google.maps.LatLng(35.20622,-85.91526);
 
+var sewaneeInnCoords = [new google.maps.LatLng(35.208869, -85.913569),
+                        new google.maps.LatLng(35.208912, -85.913527),
+                        new google.maps.LatLng(35.208908, -85.913461),
+                        new google.maps.LatLng(35.208949, -85.913400),
+                        new google.maps.LatLng(35.209005, -85.913404),
+                        new google.maps.LatLng(35.209084, -85.913468),
+                        new google.maps.LatLng(35.209187, -85.913608),
+                        new google.maps.LatLng(35.209217, -85.913684),
+                        new google.maps.LatLng(35.209209, -85.913691),
+                        new google.maps.LatLng(35.209224, -85.913747),
+                        new google.maps.LatLng(35.209240, -85.913748),
+                        new google.maps.LatLng(35.209266, -85.913862),
+                        new google.maps.LatLng(35.209250, -85.913868),
+                        new google.maps.LatLng(35.209257, -85.913895),
+                        new google.maps.LatLng(35.209275, -85.913892),
+                        new google.maps.LatLng(35.209296, -85.914017),
+                        new google.maps.LatLng(35.209284, -85.914025),
+                        new google.maps.LatLng(35.209301, -85.914172),
+                        new google.maps.LatLng(35.209292, -85.914271),
+                        new google.maps.LatLng(35.209385, -85.914297),
+                        new google.maps.LatLng(35.209433, -85.914069),
+                        new google.maps.LatLng(35.209699, -85.914160),
+                        new google.maps.LatLng(35.209678, -85.914296),
+                        new google.maps.LatLng(35.209649, -85.914293),
+                        new google.maps.LatLng(35.209637, -85.914394),
+                        new google.maps.LatLng(35.209616, -85.914389),
+                        new google.maps.LatLng(35.209547, -85.914693),
+                        new google.maps.LatLng(35.209516, -85.914683),
+                        new google.maps.LatLng(35.209454, -85.914660),
+                        new google.maps.LatLng(35.209425, -85.914774),
+                        new google.maps.LatLng(35.209318, -85.914740),
+                        new google.maps.LatLng(35.209332, -85.914672),
+                        new google.maps.LatLng(35.209229, -85.914642),
+                        new google.maps.LatLng(35.209217, -85.914695),
+                        new google.maps.LatLng(35.209181, -85.914687),
+                        new google.maps.LatLng(35.209188, -85.914554),
+                        new google.maps.LatLng(35.209070, -85.914513),
+                        new google.maps.LatLng(35.209107, -85.914313),
+                        new google.maps.LatLng(35.209088, -85.914239),
+                        new google.maps.LatLng(35.209005, -85.914270),
+                        new google.maps.LatLng(35.208996, -85.914219),
+                        new google.maps.LatLng(35.209081, -85.914188),
+                        new google.maps.LatLng(35.209066, -85.914109),
+                        new google.maps.LatLng(35.209099, -85.914092),
+                        new google.maps.LatLng(35.209029, -85.913762)];
+
+
+var courseCoords =  [new google.maps.LatLng(35.210507, -85.914807),
+                       new google.maps.LatLng(35.210428, -85.914804),
+                       new google.maps.LatLng(35.210432, -85.914670),
+                       new google.maps.LatLng(35.210541, -85.914678),
+                       new google.maps.LatLng(35.210540, -85.914787),
+                       new google.maps.LatLng(35.210509, -85.914786)
+                      ];   
+                      
+var phillipsCoords = [new google.maps.LatLng(35.205694, -85.928907), 
+                        new google.maps.LatLng(35.205712, -85.928926),
+                        new google.maps.LatLng(35.205686, -85.928967),
+                        new google.maps.LatLng(35.205729, -85.929012), 
+                        new google.maps.LatLng(35.205787, -85.928927), 
+                        new google.maps.LatLng(35.205831, -85.928969), 
+                        new google.maps.LatLng(35.205807, -85.929004), 
+                        new google.maps.LatLng(35.205848, -85.929046), 
+                        new google.maps.LatLng(35.205871, -85.929016), 
+                        new google.maps.LatLng(35.205924, -85.929071), 
+                        new google.maps.LatLng(35.205994, -85.928962), 
+                        new google.maps.LatLng(35.205877, -85.928848), 
+                        new google.maps.LatLng(35.205932, -85.928757), 
+                        new google.maps.LatLng(35.205865, -85.928693), 
+                        new google.maps.LatLng(35.205760, -85.928845), 
+                        new google.maps.LatLng(35.205745, -85.928834) 
+                      ];
+
 
   var elliotCoords =  [new google.maps.LatLng(35.200591, -85.921505),
                        new google.maps.LatLng(35.200651,-85.921477),
@@ -324,7 +397,8 @@ var humphreysCoords = [new google.maps.LatLng(35.20490,-85.91507),
 
 var dormsArray = [elliotCoords,tuckawayCoords,quintardCoords,gorgasCoords,
                   hunterCoords,clevelandCoords,cannonCoords,johnsonCoords,
-                  stLukesCoords,hoffmanCoords,benedictCoords,humphreysCoords];
+                  stLukesCoords,hoffmanCoords,benedictCoords,humphreysCoords,
+                  sewaneeInnCoords,courseCoords,phillipsCoords];
 
 var fratArray = [sigmaNuCoords,aTOCoords, phiSocietyCoords,phiSocietyBarnCoords,
                  sigmaAlphaEpsilonCoords,deltaTauDeltCoords,phiGammaCoords,
